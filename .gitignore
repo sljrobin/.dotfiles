@@ -1,0 +1,16 @@
+dzen2/.dzen2_bak
+mpd/.mpd/db
+mpd/.mpd/log
+mpd/.mpd/pid
+mpd/.mpd/state
+ncmpcpp/.ncmpcpp/error.log
+newsbeuter/.newsbeuter/cache.db
+newsbeuter/.newsbeuter/history.cmdline
+newsbeuter/.newsbeuter/history.search
+vim/.vim/bundle
+xmonad/.xmonad/xmonad.errors
+xmonad/.xmonad/xmonad.hi
+xmonad/.xmonad/xmonad.o
+xmonad/.xmonad/xmonad-x86_64-linux
+xmonad/.xmonad/lib/*.hi
+xmonad/.xmonad/lib/*.o
