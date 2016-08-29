@@ -1,0 +1,541 @@
+## Configuration for Conky
+## Author: Simon L. J. Robin | https://sljrobin.org
+
+################################################################################
+# Running
+################################################################################
+#  * `total_run_times`            -> Number of times to update before quitting
+#  * `update_interval`            -> Refresh time (seconds)
+#  * `update_interval_on_battery` -> Refresh time (seconds) on batterypower
+################################################################################
+total_run_times 0
+update_interval 1
+update_interval_on_battery 1
+
+
+################################################################################
+# X
+################################################################################
+#  * `double_buffer`    -> Enable/Disable XDBE extension
+#  * `no_buffers`       -> Show or not only amount of RAM that is used
+#  * `out_to_console`   -> Enable/Disable printing on stdout
+#  * `out_to_ncurses`   -> Use or not ncurses
+#  * `out_to_stderr`    -> Enable/Disable printing on stderr
+#  * `out_to_x`         -> Enable/Disable printing on X
+#  * `text_buffer_size` -> Size of the standard text buffer (bytes)
+################################################################################
+out_to_x yes
+out_to_stderr no
+out_to_console no
+out_to_ncurses no
+double_buffer yes
+no_buffers yes
+text_buffer_size 256
+
+
+################################################################################
+# Window
+################################################################################
+#  * `background`             -> Enable/Disable background
+#  * `own_window_argb_value`  -> ARGB value
+#  * `own_window_argb_visual` -> Enable/Disable ARGB visual
+#  * `own_window_class`       -> Set the WM_CLASS name
+#  * `own_window_colour`      -> Background color
+#  * `own_window_hints`       -> Window hints
+#  * `own_window_title`       -> Window title
+#  * `own_window_transparent` -> Enable/Disable transparency
+#  * `own_window_type`        -> Window type
+################################################################################
+own_window yes
+own_window_class Conky
+own_window_title Conky
+own_window_transparent no
+own_window_argb_visual yes
+own_window_argb_value 180
+background yes
+own_window_colour 181818
+own_window_type normal
+own_window_hints below,skip_taskbar,skip_pager
+
+
+################################################################################
+# Fonts
+################################################################################
+#  * `font`                 -> Font name in X
+#  * `override_utf8_locale` -> Force or not UTF-8
+#  * `use_xft`              -> Enable/Disable Xft support
+#  * `xftalpha`             -> Xft transparency
+#  * `xftfont`              -> Xft font
+################################################################################
+override_utf8_locale yes
+font -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+use_xft yes
+xftfont DejaVu Sans Mono:style=Book:size=9
+xftalpha 0.8
+
+
+################################################################################
+# Display
+################################################################################
+#  * `cpu_avg_samples`       -> Number of samples for CPU average
+#  * `diskio_avg_samples`    -> Number of samples for Disk I/O average
+#  * `extra_newline`         -> Put or not extra lines
+#  * `format_human_readable` -> Enable/Disable human format
+#  * `net_avg_samples`       -> Number of samples for Network average
+#  * `pad_percents`          -> Number of decimals
+#  * `short_units`           -> Enable/Disable a shortener for units
+#  * `temperature_unit`      -> Temperature unit
+#  * `uppercase`             -> Put or not uppercases everywhere
+#  * `use_spacer`            -> Add or not extra spaces on left or right
+################################################################################
+cpu_avg_samples 1
+diskio_avg_samples 2
+net_avg_samples 2
+extra_newline yes
+use_spacer none
+uppercase no
+format_human_readable yes
+short_units yes
+temperature_unit celsius
+pad_percents 2
+
+
+################################################################################
+# Theme
+################################################################################
+#  * `color0` -> Black
+#  * `color1` -> Red
+#  * `color2` -> Orange
+#  * `color3` -> Yellow
+#  * `color4` -> Green
+#  * `color5` -> Cyan
+#  * `color6` -> Blue
+#  * `color7` -> Purple
+#  * `color8` -> Brown
+#  * `color9` -> White
+################################################################################
+color0 181818
+color1 AB4642
+color2 DC9656
+color3 F7CA88
+color4 A1B56C
+color5 86C1B9
+color6 7CAFC2
+color7 BA8BAF
+color8 A16946
+color9 E8E8E8
+
+
+################################################################################
+# Appearance
+################################################################################
+#  * `alignment`             -> Aligned position on screen
+#  * `border_inner_margin`   -> Margin (pixels) between the border and text
+#  * `border_outer_margin`   -> Margin (piexls) between the border and window
+#  * `border_width`          -> Border width (pixels)
+#  * `default_bar_size`      -> Default bar size (pixels) - (<width> <height>)
+#  * `default_color`         -> Default color for text and border
+#  * `default_gauge_size`    -> Default gauge size (pixels) - (<width> <height>)
+#  * `default_graph_size`    -> Default graph size (pixels) - (<width> <height>)
+#  * `default_outline_color` -> Default color for outline
+#  * `default_shade_color`   -> Default color for shade
+#  * `draw_borders`          -> Enable/Disable borders for text blocks
+#  * `draw_graph_borders`    -> Enable/Disable borders for graphs
+#  * `draw_outline`          -> Enable/Disable outlines
+#  * `draw_shades`           -> Enable/Disable shades
+#  * `gap_x`                 -> Gap (pixels) between left or right border
+#  * `gap_y`                 -> Gap (pixels) between top or bottom border
+#  * `max_specials`          -> Maximum number of special things
+#  * `max_text_width`        -> Maximum size (bytes) of a line (0 = infinite)
+#  * `max_user_text`         -> Maximum size (bytes) of user text buffer
+#  * `maximum_width`         -> Maximum size (pixels)
+#  * `minimum_size`          -> Minimum size (pixels) - (<width> <height>)
+#  * `stippled_borders`      -> Border stippling (pixels)
+################################################################################
+alignment top_right
+minimum_size 256 512
+maximum_width 512
+gap_x 5
+gap_y 50
+max_user_text 16384
+max_text_width 0
+max_specials 512
+draw_outline no
+draw_shades no
+draw_borders yes
+draw_graph_borders no
+border_width 1
+border_inner_margin 10
+border_outer_margin 0
+stippled_borders 0
+default_bar_size 0 6
+default_gauge_size 25 25
+default_graph_size 0 25
+default_color B8B8B8
+default_outline_color B8B8B8
+default_shade_color 181818
+
+
+################################################################################
+# Music Player
+################################################################################
+#  * `mpd_host`              -> MPD host
+#  * `mpd_port`              -> MPD port
+#  * `music_player_interval` -> Refresh time (seconds)
+################################################################################
+music_player_interval 1
+mpd_host localhost
+mpd_port 6600
+
+
+################################################################################
+# Monitors
+################################################################################
+#  * `TEXT`               -> Declare monitors
+#  * `${alignc}`          -> Align text to center
+#  * `${alignl}`          -> Align text to left
+#  * `${alignr}`          -> Align text to right
+#  * `${color}`           -> Reset text color
+#  * `${color <color>}`   -> Change text color
+#  * `${font <details>}`  -> Use a specific font
+#  * `${font}`            -> Reset font
+#  * `{hr <value>}`       -> Create a horizontal rule (pixels)
+#  * `${voffset <value>}` -> Change vertical offset (pixels)
+################################################################################
+TEXT
+#
+#
+################################################################################
+# Monitor: System
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=12}\
+SYSTEM\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# System
+# ----------------------------------------------------------
+System\
+${alignr}\
+${color9}${sysname}${color}
+# ----------------------------------------------------------
+# Kernel
+# ----------------------------------------------------------
+Kernel\
+${alignr}\
+${color9}${kernel}${color}
+# ----------------------------------------------------------
+# Machine
+# ----------------------------------------------------------
+Machine\
+${alignr}\
+${color9}${nodename}${color}
+# ----------------------------------------------------------
+# Architecture
+# ----------------------------------------------------------
+Architecture\
+${alignr}\
+${color9}${machine}${color}
+# ----------------------------------------------------------
+# Users
+# ----------------------------------------------------------
+Users\
+${alignr}\
+${color9}${user_number}${color}
+# ----------------------------------------------------------
+# Rule
+# ----------------------------------------------------------
+${color 383838}${hr 1}${color}${voffset 2}
+# ----------------------------------------------------------
+# Date
+# ----------------------------------------------------------
+Date\
+${alignr}\
+${color9}${time %d/%m/%Y}${color}
+# ----------------------------------------------------------
+# Time
+# ----------------------------------------------------------
+Time\
+${alignr}\
+${color9}${time %H:%M:%S}${color}
+# ----------------------------------------------------------
+# Uptime
+# ----------------------------------------------------------
+Uptime\
+${alignr}\
+${color9}${uptime_short}${color}
+# ----------------------------------------------------------
+# Updates
+# ----------------------------------------------------------
+Updates\
+${alignr}\
+${color9}\
+${exec aptitude search "~U" | wc -l}\
+#${exec pacman -Qu | wc -l}\
+#${exec yaourt -Qu | wc -l}\
+${color}
+
+#
+################################################################################
+# Monitor: CPU
+################################################################################
+#  * `processes` -> Total of processes
+#  * `running_processes` -> Running processes
+#  * `running_threads` -> Running threads
+#  * `loadavg` -> System load average
+#  * `loadgraph` -> System load average graph
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=12}\
+CPU\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# System load average
+# ----------------------------------------------------------
+${loadgraph}
+Load average\
+${alignr}\
+${color9}${loadavg}${color}
+# ----------------------------------------------------------
+# Usage
+# ----------------------------------------------------------
+Usage\
+${alignr}\
+${color9}${cpu cpu0}%${color}
+# ----------------------------------------------------------
+# Frequency
+# ----------------------------------------------------------
+Frequency\
+${alignr}\
+${color9}${freq_g}GHz${color}
+# ----------------------------------------------------------
+# Temperature
+# ----------------------------------------------------------
+Temperature\
+${alignr}\
+${color9}${acpitemp}°C${color}
+# ----------------------------------------------------------
+# Processes
+# ----------------------------------------------------------
+Processes\
+${alignr}\
+${color9}${processes}${color} \
+(${color9}${running_processes}${color})
+# ----------------------------------------------------------
+# Threads
+# ----------------------------------------------------------
+Threads\
+${alignr}\
+${color9}${threads}${color} \
+(${color9}${running_threads}${color})
+
+#
+${color1}${top name 1}${alignr}${top cpu 1}%${color}
+${color2}${top name 2}${alignr}${top cpu 2}%${color}
+${color3}${top name 3}${alignr}${top cpu 3}%${color}
+# ----------------------------------------------------------
+# Rule
+# ----------------------------------------------------------
+${color 383838}${hr 1}${color}${voffset 2}
+#
+${color1}${top_mem name 1}${alignr}${top_mem mem 1}%${color}
+${color2}${top_mem name 2}${alignr}${top_mem mem 2}%${color}
+${color3}${top_mem name 3}${alignr}${top_mem mem 3}%${color}
+
+#
+################################################################################
+# Monitor: Memory
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=12}\
+MEMORY\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# Title: RAM/SWAP
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=9}\
+RAM\
+${voffset 3}\
+${alignr}\
+SWAP\
+${voffset 3}\
+${font}\
+${color}
+# ----------------------------------------------------------
+# Percentage: RAM/SWAP
+# ----------------------------------------------------------
+${color9}${memperc}%${color}\
+${alignr}\
+${color9}${swapperc}%${color}
+# ----------------------------------------------------------
+# Usage: RAM/SWAP
+# ----------------------------------------------------------
+${color9}${mem}${color}\
+/\
+${color9}${memmax}${color}\
+${alignr}\
+${color9}${swap}${color}\
+/\
+${color9}${swapmax}${color}
+# ----------------------------------------------------------
+# Bar: RAM/SWAP
+# ----------------------------------------------------------
+${membar 5,96}\
+${alignr}\
+${swapbar 5,96}
+# ----------------------------------------------------------
+# Rule
+# ----------------------------------------------------------
+${color 383838}${hr 1}${color}${voffset 2}
+# ----------------------------------------------------------
+# Drive '/': Title
+# ----------------------------------------------------------
+Drive\
+${alignr}\
+${color9} /${color}
+# ----------------------------------------------------------
+# Drive '/': Usage
+# ----------------------------------------------------------
+Usage\
+${alignr}\
+${color9}${fs_used /}${color}\
+/\
+${color9}${fs_size /}${color}
+
+#
+################################################################################
+# Monitor: Network
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=12}\
+NETWORK\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# IP
+# ----------------------------------------------------------
+IP\
+${alignr}\
+${color9}${addr}${color}
+# ----------------------------------------------------------
+# Rule
+# ----------------------------------------------------------
+${color 383838}${hr 1}${color}${voffset 2}
+# ----------------------------------------------------------
+# Title: Up/Down
+# ----------------------------------------------------------
+${color B8B8B8}\
+${font DejaVu Sans Mono:style=Bold:size=9}\
+Up\
+${voffset 3}\
+${alignr}\
+Down\
+${voffset 3}\
+${font}\
+${color}
+# ----------------------------------------------------------
+# Speed: Up/Down
+# ----------------------------------------------------------
+${color9}${upspeed}/s${color}\
+${alignr}\
+${color9}${downspeed}/s${color}
+# ----------------------------------------------------------
+# Total: Up/Down
+# ----------------------------------------------------------
+${color9}${totalup}${color}\
+${alignr}\
+${color9}${totaldown}${color}
+# ----------------------------------------------------------
+# Graph: Up/Down
+# ----------------------------------------------------------
+${upspeedgraph 15,128}\
+${alignr}\
+${downspeedgraph 15,128}
+
+#
+################################################################################
+# Monitor: Music
+################################################################################
+#  * `mpd_album`  -> Song album
+#  * `mpd_artist` -> Song artist
+#  * `mpd_title`  -> Song title
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}
+${font DejaVu Sans Mono:style=Bold:size=12}\
+MUSIC\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# Song
+# ----------------------------------------------------------
+Song\
+${alignr}\
+${color9}${mpd_title}${color}
+# ----------------------------------------------------------
+# Album
+# ----------------------------------------------------------
+Album\
+${alignr}\
+${color9}${mpd_album}${color}
+# ----------------------------------------------------------
+# Artist
+# ----------------------------------------------------------
+Artist\
+${alignr}\
+${color9}${mpd_artist}${color}
+# ----------------------------------------------------------
+# Year
+# ----------------------------------------------------------
+#
+#
+################################################################################
+# Monitor: Power
+################################################################################
+#  * `acpiacadapter`   -> AC indicator
+#  * `battery_percent` -> Battery percentage
+################################################################################
+# ----------------------------------------------------------
+# Title
+# ----------------------------------------------------------
+${color B8B8B8}
+${font DejaVu Sans Mono:style=Bold:size=12}\
+POWER\
+${font}\
+${color}
+${color 585858}${hr 2}${color}${voffset 3}
+# ----------------------------------------------------------
+# Usage
+# ----------------------------------------------------------
+Usage\
+${alignr}\
+${color9}${battery_percent}%${color}
+# ----------------------------------------------------------
+# AC
+# ----------------------------------------------------------
+AC\
+${alignr}\
+${color9}${acpiacadapter}${color}
