@@ -1,0 +1,7 @@
+[user]
+	name = sljrobin
+	email = sljrobin@gmail.com
+[push]
+	default = matching
+[core]
+	editor = nano
