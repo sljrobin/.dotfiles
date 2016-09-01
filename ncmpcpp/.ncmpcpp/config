@@ -1,0 +1,157 @@
+## Configuration for ncmpcpp
+## Author: Simon L. J. Robin | https://sljrobin.org
+
+################################################################################
+## Boot
+################################################################################
+#  * `browser_display_mode`               -> Display mode for Browser
+#  * `colors_enabled`                     -> Enable/Disable colors
+#  * `cyclic_scrolling`                   -> Enable/Disable cyclic scrolling
+#  * `discard_colors_if_item_is_selected` -> Enable/Disable colors for items
+#  * `enable_window_title`                -> Enable/Disable custom window title
+#  * `external_editor`                    -> Editor to edit lyrics
+#  * `jump_to_now_playing_song_at_start`  -> Jump to the playing song at start
+#  * `mpd_connection_timeout`             -> MPD Connection timeout in seconds
+#  * `mpd_crossfade_time`                 -> MPD Crossfade in seconds
+#  * `mpd_host`                           -> MPD Host
+#  * `mpd_music_dir`                      -> MPD Music directory
+#  * `mpd_port`                           -> MPD Port
+#  * `ncmpcpp_directory`                  -> Ncmpcpp directory
+#  * `playlist_disable_highlight_delay`   -> Delay for highlighting playlist
+#  * `playlist_display_mode`              -> Display mode for Playlist
+#  * `playlist_editor_display_mode`       -> Display mode for Playlist Editor
+#  * `playlist_separate_albums`           -> Enable/Disable separators
+#  * `search_engine_display_mode`         -> Display mode for Search Engine
+#  * `song_window_title_format`           -> Window title (`MPD: <title>`)
+#  * `system_encoding`                    -> Specify system-encoding
+#  * `use_console_editor`                 -> Enable/Disable console editor
+#  * `user_interface`                     -> Main UI
+################################################################################
+# Core
+ncmpcpp_directory = "~/.ncmpcpp/"
+enable_window_title = "yes"
+external_editor = "vim"
+song_window_title_format = "MPD: {%t}"
+system_encoding = "utf-8"
+use_console_editor = "yes"
+
+# MPD Connection
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "0"
+mpd_host = "127.0.0.1"
+mpd_music_dir = "~/Data/Music/"
+mpd_port = "6600"
+
+# Colors
+colors_enabled = "yes"
+discard_colors_if_item_is_selected = "no"
+
+# Display
+browser_display_mode = "columns"
+playlist_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+user_interface = "classic"
+
+# Playlist
+jump_to_now_playing_song_at_start = "yes"
+cyclic_scrolling = "yes"
+playlist_disable_highlight_delay = "3"
+playlist_separate_albums = "no"
+
+
+################################################################################
+## Appearance
+################################################################################
+#  * `active_column_color`         -> Background color for colums
+#  * `autocenter_mode`             -> Enable/Disable autocenter mode
+#  * `centered_cursor`             -> Highlight position centered or not
+#  * `color1`                      -> One of colors used in several items
+#  * `color2`                      -> One of colors used in several items
+#  * `display_bitrate`             -> Show song's bitrate in Status Bar
+#  * `display_remaining_time`      -> Show or not remaining time with a `-`
+#  * `display_volume_level`        -> Print or not volume
+#  * `header_text_scrolling`       -> Enable/Disable scrolling for header
+#  * `header_visibility`           -> Show or not header
+#  * `header_window_color`         -> Font color
+#  * `main_window_color`           -> Main window font color
+#  * `main_window_highlight_color` -> Main window highlight color
+#  * `now_playing_prefix`          -> Prefix format of the current playing song
+#  * `now_playing_suffix`          -> Suffix format of the current playing song
+#  * `progressbar_boldness`        -> Display or not in bold in Progress Bar
+#  * `progressbar_color`           -> Font color for Progress Bar
+#  * `progressbar_elapsed_color`   -> Font color for Progress Bar for time
+#  * `progressbar_look`            -> Printed characters for Progress Bar
+#  * `song_status_format`          -> Format for Status Bar
+#  * `state_flags_color`           -> State flags color
+#  * `state_line_color`            -> State line color
+#  * `statusbar_color`             -> Font color for Status Bar
+#  * `statusbar_visibility`        -> Enable/Disable Status Bar
+#  * `titles_visibility`           -> Show or not titles in Status Bar
+#  * `volume_color`                -> Volume color
+################################################################################
+# Colors
+color1 = "black"
+color2 = "white"
+
+# Header
+display_volume_level = "no"
+header_visibility = "yes"
+header_window_color = "black"
+header_text_scrolling = "yes"
+state_flags_color = "magenta"
+state_line_color = "white"
+volume_color = "black"
+
+# Main window
+main_window_color = "white"
+main_window_highlight_color = "white"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+active_column_color = "blue"
+titles_visibility = "no"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# Progress Bar
+progressbar_boldness = "yes"
+progressbar_color = "black"
+progressbar_elapsed_color = "white"
+progressbar_look = "─╼╌"
+
+# Status Bar
+statusbar_visibility = "yes"
+statusbar_color = "black"
+display_bitrate = "yes"
+display_remaining_time = "no"
+song_status_format = "{$8%t$9}{$2|$9}{$2%a$9} | {$5%b$9}"
+
+
+################################################################################
+song_list_format = "{$7%n$9}"
+
+# Playlist tab
+#song_columns_list_format = "(10)[red]{a} (23)[white]{t} (23)[blue]{b} (8)[cyan]{l} (4)[green]{n}" 
+song_columns_list_format = "(10)[magenta]{a} (23)[blue]{t} (23)[cyan]{b} (8)[green]{l} (4)[yellow]{n}" 
+
+
+################################################################################
+## Visualizer
+################################################################################
+#  * `visualizer_color`             -> Color for Visualizer
+#  * `visualizer_fifo_path`         -> Path to MPD fifo output
+#  * `visualizer_in_stereo`         -> Enable/Disable Stereo
+#  * `visualizer_look`              -> Look for Visualizer
+#  * `visualizer_output_name`       -> Name dor Visualizer
+#  * `visualizer_sample_multiplier` -> Multiply received samples
+#  * `visualizer_sync_interval`     -> Interval in seconds for look and audio
+#  * `visualizer_type`              -> Type for Visualizer
+################################################################################
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_color = "black,magenta,blue,cyan,green,yellow,red,white"
+visualizer_look = "+•"
+visualizer_sample_multiplier = "1"
