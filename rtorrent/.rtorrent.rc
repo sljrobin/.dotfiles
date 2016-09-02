@@ -1,0 +1,91 @@
+## Configuration for rTorrent
+## Author: Simon L. J. Robin | https://sljrobin.org
+
+################################################################################
+# Peers
+################################################################################
+#  * `max_peers` -> Maximum number of peers to connect per torrent
+#  * `min_peers` -> Minimum number of peers to connect per torrent
+################################################################################
+min_peers = 50
+max_peers = 100
+
+
+################################################################################
+# Uploads
+################################################################################
+#  * `max_uploads` -> Maximum number of simultaneous uploads per torrent
+################################################################################
+max_uploads = 1
+
+
+################################################################################
+# Rate
+################################################################################
+#  * `download_rate` -> Global download rate (in KiB). '0' = unlimited
+#  * `upload_rate`   -> Global upload rate (in KiB). '0' = unlimited
+################################################################################
+download_rate = 0
+upload_rate   = 50
+
+
+################################################################################
+# Files/Directories
+################################################################################
+#  * `directory` -> Directory for downloaded torrents
+#  * `schedule`  -> Watch a particular directory for new torrent files
+#      * Syntax: <id>, <start>, <interval>, <command>
+#      * `close_untied`     -> Close the torrents that are tied to filenames
+#                              that have been deleted
+#      * `low_diskspace`    -> Close torrents when diskspace is low
+#      * `remove_untied`    -> Remove the torrents that are tied to filenames
+#                              that have been deleted
+#      * `start_tied`       -> Start torrents that have been copied back 
+#      * `stop_untied`      -> Stop the torrents that are tied to filenames
+#                              that have been deleted
+#      * `tied_directory`   -> Options for tied directory
+#      * `untied_directory` -> Options for untied directory
+#      * `watch_directory`  -> Watch a directory for new torrents
+#  * `session`   -> Directory for rTorrent session
+################################################################################
+directory = ~/Downloads
+session   = ~/.rtorrent/session
+schedule  = watch_directory, 5, 5, load_start=~/.rtorrent/torrents/*.torrent
+schedule  = tied_directory, 5, 5, start_tied= 
+schedule  = untied_directory, 5, 5, stop_untied= 
+schedule  = untied_directory, 5, 5, close_untied= 
+schedule  = untied_directory, 5, 5, remove_untied= 
+schedule  = low_diskspace, 5, 60, close_low_diskspace=100M 
+
+
+################################################################################
+# Ports
+################################################################################
+#  * `port_random` -> Start/Stop opening ports at a random position within the
+#                     port range
+#  * `port_range`  -> Port range to use for listening
+################################################################################
+port_range  = 60125-64125
+port_random = yes
+
+
+################################################################################
+# Hash & Encryption
+################################################################################
+#  * `check_hash` -> Enable/Disable checking for hash for finished torrents
+#  * `encryption` -> Enable/Disable encryption
+################################################################################
+check_hash = yes
+encryption = allow_incoming,try_outgoing,enable_retry
+
+
+################################################################################
+# Distributed Hash Table
+################################################################################
+#  * `dht_port`: UDP port to use for DHT
+#  * `dht`: Enable/Disable DHT
+#  * `peer_exchange`: Enable/Disable peer exchange
+################################################################################
+dht           = auto
+dht_port      = 63425
+peer_exchange = yes
