@@ -55,7 +55,7 @@ user_interface = "classic"
 
 # Playlist
 jump_to_now_playing_song_at_start = "yes"
-cyclic_scrolling = "yes"
+cyclic_scrolling = "no"
 playlist_disable_highlight_delay = "3"
 playlist_separate_albums = "no"
 
@@ -132,7 +132,8 @@ song_list_format = "{$7%n$9}"
 
 # Playlist tab
 #song_columns_list_format = "(10)[red]{a} (23)[white]{t} (23)[blue]{b} (8)[cyan]{l} (4)[green]{n}" 
-song_columns_list_format = "(10)[magenta]{a} (23)[blue]{t} (23)[cyan]{b} (8)[green]{l} (4)[yellow]{n}" 
+#song_columns_list_format = "(10)[magenta]{a} (23)[blue]{t} (23)[cyan]{b} (8)[green]{l} (4)[yellow]{n}" 
+song_columns_list_format = "(25)[green]{a} (23)[blue]{t} (23)[yellow]{b} (5)[red]{l} (5)[magenta]{n}" 
 
 
 ################################################################################
