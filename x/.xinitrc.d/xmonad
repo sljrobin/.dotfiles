@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+#        Filename: xmonad.sh
+#     Description: xinit | xmonad
+#          Author: Simon L. J. Robin | https://sljrobin.org
+#         Created: 2016-04-10 04:04:22
+#        Modified: 2016-04-10 04:04:48
+#
+################################################################################
+# Load Xresources
+if [ -f ~/.Xresources ]; then
+  xrdb ~/.Xresources
+fi
+
+xset b on                           # Terminal Bell
+xset m 3 0                          # Mouse acceleration (<acceleration> <threshold>)
+xsetroot -bg black                  # Use a black background
+xsetroot -cursor_name left_ptr      # Use a left pointer for the cursor
+setxkbmap -layout us &              # Load the US key map
+xscreensaver -no-splash &           # Start XScreenSaver
+urxvtd -o -f -q &                   # Start rxvt-unicode daemon
+mpd $HOME/.mpd/mpd.conf &           # Start Music Player Daemon
+exec xmonad | $HOME/.dzen2/boot.sh  # Start xmonad and Dzen
