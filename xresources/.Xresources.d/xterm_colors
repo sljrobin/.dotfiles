@@ -1,0 +1,36 @@
+!-------------------------------------------------------------------------------
+!-- xterm Colors
+!-------------------------------------------------------------------------------
+!  * `xterm*color0`  -> Gray 1
+!  * `xterm*color1`  -> Red
+!  * `xterm*color2`  -> Green
+!  * `xterm*color3`  -> Yellow
+!  * `xterm*color4`  -> Blue
+!  * `xterm*color5`  -> Purple
+!  * `xterm*color6`  -> Cyan
+!  * `xterm*color7`  -> White 1
+!  * `xterm*color8`  -> Gray 4
+!  * `xterm*color9`  -> Orange
+!  * `xterm*color10` -> Gray 2
+!  * `xterm*color11` -> Gray 3
+!  * `xterm*color12` -> Gray 5
+!  * `xterm*color13` -> White 2
+!  * `xterm*color14` -> Brown
+!  * `xterm*color15` -> White 3
+!-------------------------------------------------------------------------------
+xterm*color0:  base00
+xterm*color1:  base08
+xterm*color2:  base0B
+xterm*color3:  base0A
+xterm*color4:  base0D
+xterm*color5:  base0E
+xterm*color6:  base0C
+xterm*color7:  base05
+xterm*color8:  base03
+xterm*color9:  base09
+xterm*color10: base01
+xterm*color11: base02
+xterm*color12: base04
+xterm*color13: base06
+xterm*color14: base0F
+xterm*color15: base07

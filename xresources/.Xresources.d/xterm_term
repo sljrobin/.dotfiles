@@ -1,0 +1,51 @@
+!-------------------------------------------------------------------------------
+!-- xterm Terminal
+!-------------------------------------------------------------------------------
+!  * `xterm*bellSuppressTime` -> Delay after a 'bell' command is sent during which additional 'bell's will be suppressed
+!  * `xterm*geometry`         -> Define the X window geometry based on '$LINES' and '$COLUMNS'
+!  * `xterm*loginShell`       -> Enable/Disable to start with a Login Shell
+!  * `xterm*marginBell`       -> Enable/Disable for displayin 'bell' character near the right margin
+!  * `xterm*termName`         -> Specify the terminal type name
+!  * `xterm*visualBellDelay`  -> Delay when displaying a 'bell' character
+!  * `xterm*visualBell`       -> Enable/Disable the visual bells when recepting a 'bell' character
+!-------------------------------------------------------------------------------
+xterm*geometry:         80x20
+xterm*termName:         xterm-256color
+xterm*loginShell:       false
+xterm*visualBell:       false
+xterm*visualBellDelay:  0
+xterm*bellSuppressTime: 200
+xterm*marginBell:       false
+
+
+!-------------------------------------------------------------------------------
+!-- Windows
+!-------------------------------------------------------------------------------
+!  * `xterm*background` -> Background color
+!  * `xterm*foreground` -> Foreground color
+!-------------------------------------------------------------------------------
+! Colors
+xterm*background: base00
+xterm*foreground: base05
+
+
+!-------------------------------------------------------------------------------
+!-- Scrolling
+!-------------------------------------------------------------------------------
+!  * `xterm*jumpScroll`     -> Enable/Disable when scrolling quickly, fewer screen updates are performed
+!  * `xterm*multiScroll`    -> Enable/Disable scrolling asynchronously
+!  * `xterm*rightScrollBar` -> Enable/Disable to put scroll bar on right
+!  * `xterm*scrollBar`      -> Enable/Disable a scroll bar
+!  * `xterm*scrollKey`      -> Enable/Disable the scrolling to bottom when a non-special key is pressed 
+!  * `xterm*scrollTtyOuput` -> Enable/Disable the scrolling to bottom when TTY receives output
+!  * `xterm*saveLines`      -> Quantity of lines to save
+!  * `xterm*scrollLines`    -> Number of lines to scroll
+!-------------------------------------------------------------------------------
+xterm*saveLines:       50000
+xterm*scrollBar:       false
+xterm*rightScrollBar:  true
+xterm*scrollKey:       true
+xterm*scrollLines:     1
+xterm*scrollTtyOutput: false
+xterm*jumpScroll:      true
+xterm*multiScroll:     true

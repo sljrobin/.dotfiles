@@ -1,0 +1,12 @@
+!-------------------------------------------------------------------------------
+!-- xterm Cursor
+!-------------------------------------------------------------------------------
+!  * `xterm*cursorBlink`   -> Enable/Disable terminal cursor blinking
+!  * `xterm*cursorColor`   -> Terminal cursor main color
+!  * `xterm*cursorOffTime` -> Duration of the Off part of the cursor blink
+!  * `xterm*cursorOnTime`  -> Duration of the On part of the cursor blink
+!-------------------------------------------------------------------------------
+xterm*cursorBlink:   true
+xterm*cursorOnTime:  500
+xterm*cursorOffTime: 500
+xterm*cursorColor:   base05

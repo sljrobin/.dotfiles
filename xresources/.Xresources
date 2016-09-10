@@ -1,0 +1,34 @@
+!-------------------------------------------------------------------------------
+!-- Xresources
+!-- Author: Simon L. J. Robin | https://sljrobin.org
+!-------------------------------------------------------------------------------
+! Main colorscheme
+#include ".Xresources.d/theme"
+
+! X Window System
+#include ".Xresources.d/x_font"
+#include ".Xresources.d/x_cursor"
+
+! xterm
+#include ".Xresources.d/xterm_colors"
+#include ".Xresources.d/xterm_term"
+#include ".Xresources.d/xterm_font"
+#include ".Xresources.d/xterm_keys"
+#include ".Xresources.d/xterm_cursor"
+#include ".Xresources.d/xterm_pointer"
+
+! rxvt-unicode
+#include ".Xresources.d/urxvt_colors"
+#include ".Xresources.d/urxvt_term"
+#include ".Xresources.d/urxvt_font"
+#include ".Xresources.d/urxvt_keys"
+#include ".Xresources.d/urxvt_cursor"
+#include ".Xresources.d/urxvt_perls"
+
+! Miscellaneous applications
+#include ".Xresources.d/dmenu"
+#include ".Xresources.d/dzen2"
+#include ".Xresources.d/rofi"
+#include ".Xresources.d/xcalc"
+#include ".Xresources.d/xclock"
+#include ".Xresources.d/xscreensaver"

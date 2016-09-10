@@ -1,0 +1,45 @@
+!-------------------------------------------------------------------------------
+!-- Rofi
+!-------------------------------------------------------------------------------
+!  * `rofi.modi` -> Specify a list of modes to enable
+!  * `rofi.columns` -> Number of columns to show before scrolling
+!  * `rofi.lines` -> Maximum number of lines to show before scrolling
+!  * `rofi.font` -> Font to use
+!  * `rofi.opacity` -> Window opacity
+!  * `rofi.width` -> Menu width
+!-------------------------------------------------------------------------------
+
+rofi.modi: window,run,ssh
+
+
+! Window
+rofi.opacity: 100
+rofi.width: 50
+rofi.columns: 5
+rofi.lines:   15
+
+rofi.font: DejaVu Sans Mono 10
+
+! Select next entry
+rofi.kb-row-down:                    Down,Control+n
+
+!TODO Go to next row, if one left, accept it, if no left next mode.
+rofi.kb-row-tab:                     Down
+
+! Set selected item as input text
+rofi.kb-row-select:                  Tab
+! https://davedavenport.github.io/rofi/manpage.html
+
+
+
+! Color scheme for normal row
+!rofi.color-normal:                   #fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5
+! Color scheme for urgent row
+rofi.color-urgent:                   #fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
+! Color scheme for active row
+!rofi.color-active:                   #fdf6e3,#268bd2,#eee8d5,#268bd2,#fdf6e3
+! Color scheme window
+!rofi.color-window:                   #fdf6e3,#002b36
+rofi.color-window:                   base01,base00
+rofi.color-active:                   base02,base07,#eee8d5,#268bd2,#fdf6e3
+rofi.color-normal:                   base02,base05,#eee8d5,#586e75,#eee8d5

@@ -1,0 +1,34 @@
+!-------------------------------------------------------------------------------
+!-- XScreenSaver
+!-------------------------------------------------------------------------------
+! Fonts
+xscreensaver.Dialog.bodyFont:               -*-helvetica-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:             -*-helvetica-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:               -*-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.headingFont:            -*-helvetica-bold-r-*-*-17-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:              -*-helvetica-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:              -*-helvetica-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:             -*-terminus-*-r-*-*-14-*-*-*-*-*-*-*
+
+! Borders & Shadows
+xscreensaver.Dialog.topShadowColor:         base00
+xscreensaver.Dialog.bottomShadowColor:      base00
+xscreensaver.Dialog.shadowThickness:        2
+xscreensaver.Dialog.borderWidth:            2
+xscreensaver.Dialog.internalBorderWidth:    30
+
+! Main box
+xscreensaver.Dialog.background:             base00
+xscreensaver.Dialog.foreground:             base05
+xscreensaver.Dialog.Button.background:      base02
+xscreensaver.Dialog.Button.foreground:      base05
+xscreensaver.Dialog.text.background:        base05
+xscreensaver.Dialog.text.foreground:        base03
+
+! Thermometer
+xscreensaver.passwd.thermometer.background: base00
+xscreensaver.passwd.thermometer.foreground: base08
+xscreensaver.passwd.thermometer.width:      8
+
+! Date
+xscreensaver.dateFormat:                    %Y/%m/%d %H:%S

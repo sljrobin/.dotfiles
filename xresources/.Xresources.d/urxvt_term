@@ -1,0 +1,95 @@
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Terminal
+!-------------------------------------------------------------------------------
+!  * `URxvt.geometry`     -> Define the X window geometry based on '$LINES'
+!                            and '$COLUMNS'
+!  * `URxvt.loginShell`   -> Enable/Disable to start with a Login Shell
+!  * `URxvt.termName`     -> Specify the terminal type name
+!  * `URxvt.urgentOnBell` -> Enable/Disable the use of the 'bell' characters
+!  * `URxvt.visualBell`   -> Enable/Disable the visual bells when recepting a
+!                            'bell' character
+!-------------------------------------------------------------------------------
+URxvt.geometry:     80*20
+URxvt.termName:     xterm-256color
+URxvt.loginShell:   true
+URxvt.visualBell:   false
+URxvt.urgentOnBell: true
+
+
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Windows
+!-------------------------------------------------------------------------------
+!  * `URxvt.background`     -> Background color
+!  * `URxvt.borderColor`    -> Color of the border around the text area
+!  * `URxvt.borderLess`     -> Enable/Disable borders
+!  * `URxvt.externalBorder` -> Width of external border
+!  * `URxvt.fadeColor`      -> Fade color
+!  * `URxvt.fading`         -> Fading percentage
+!  * `URxvt.foreground`     -> Foreground color
+!  * `URxvt.intensityStyles -> Enable/Disable high intensity colors
+!  * `URxvt.internalBorder` -> Width of internal border
+!-------------------------------------------------------------------------------
+! Colors 
+URxvt.background:      base00
+URxvt.foreground:      base05
+URxvt.fadeColor:       #000000
+URxvt.fading:          0
+URxvt.intensityStyles: true
+
+! Borders
+URxvt.borderColor:     base00
+URxvt.borderLess:      false
+URxvt.externalBorder:  0
+URxvt.internalBorder:  0
+
+
+urxvt.depth: 32
+urxvt.transparent: true
+urxvt.shading: 30
+
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Scrolling
+!-------------------------------------------------------------------------------
+!  * `URxvt.jumpScroll`           -> Enable/Disable when scrolling quickly,
+!                                    fewer screen updates are performed
+!  * `URxvt.mouseWheelScrollPage` -> Enable/Disable scroll page by page with
+!                                    mouse
+!  * `URxvt.saveLines`            -> Quantity of lines to save
+!  * `URxvt.scrollBar_align`      -> Set the alignment (`top`, `bottom`,
+!                                    `centre`) of the scroll bar thumb with the
+!                                    pointer on middle button press/drag.
+!  * `URxvt.scrollBar_floating`   -> Enable/Disable scroll bar with a trough
+!  * `URxvt.scrollBar_right`      -> Enable/Disable to put scroll bar on right
+!  * `URxvt.scrollBar`            -> Enable/Disable a scroll bar
+!  * `URxvt.scrollColor`          -> Color for scroll bar
+!  * `URxvt.scrollTtyKeypress`    -> Enable/Disable the scrolling to bottom
+!                                    when a non-special key is pressed 
+!  * `URxvt.scrollTtyOuput`       -> Enable/Disable the scrolling to bottom
+!                                    when TTY receives output 
+!  * `URxvt.scrollWithBuffer`     -> Enable/Disable the scollback buffer when
+!                                    TTY receives new lines
+!  * `URxvt.scrollstyle`          -> Scroll bar style (`rxvt`, `plain`, `next`,
+!                                    `xterm`)
+!  * `URxvt.secondaryScreen`      -> Enable/Disable a second screen
+!  * `URxvt.secondaryScroll`      -> Enable/Disable scrolling for secondary
+!                                    screen
+!  * `URxvt.secondaryWheel`       -> Enable/Disable support for wheel scrolling
+!                                    for secondary screen
+!  * `URxvt.troughColor`          -> Color for scroll bar trough area
+!-------------------------------------------------------------------------------
+URxvt.mouseWheelScrollPage: true
+URxvt.jumpScroll:           true
+URxvt.saveLines:            50000
+URxvt.scrollBar:            false
+URxvt.scrollBar_right:      true
+URxvt.scrollBar_floating:   true
+URxvt.scrollBar_align:      centre
+URxvt.scrollstyle:          plain
+URxvt.scrollColor:          base01
+URxvt.troughColor:          base01
+URxvt.scrollTtyKeypress:    true
+URxvt.scrollTtyOuput:       false
+URxvt.scrollWithBuffer:     true
+URxvt.secondaryScreen:      true
+URxvt.secondaryScroll:      false
+URxvt.secondaryWheel:       true

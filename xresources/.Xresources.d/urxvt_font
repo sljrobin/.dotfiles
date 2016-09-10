@@ -1,0 +1,16 @@
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Fonts
+!-------------------------------------------------------------------------------
+!  * `URxvt.boldFont`       -> Font Bold
+!  * `URxvt.boldItalicFont` -> Font Bold Italic 
+!  * `URxvt.font`           -> Font
+!  * `URxvt.imFont`         -> Font for the X Input Method
+!  * `URxvt.italicFont`     -> Font Italic
+!  * `URxvt.letterSpace`    -> Space between two characters
+!-------------------------------------------------------------------------------
+URxvt.font:           xft:DejaVu Sans Mono:pixelsize=12:style=Book
+URxvt.imFont:         xft:DejaVu Sans Mono:pixelsize=12:style=Book
+URxvt.boldFont:       xft:DejaVu Sans Mono:pixelsize=12:style=Bold
+URxvt.italicFont:     xft:DejaVu Sans Mono:pixelsize=12:style=Oblique
+URxvt.boldItalicFont: xft:DejaVu Sans Mono:pixelsize=12:style=Bold Oblique
+URxvt.letterSpace:    -1

@@ -1,0 +1,10 @@
+!-------------------------------------------------------------------------------
+!-- dzen2
+!-------------------------------------------------------------------------------
+!  * `dzen2.background` -> Background color
+!  * `dzen2.font`       -> Font
+!  * `dzen2.foreground` -> Foreground color
+!-------------------------------------------------------------------------------
+dzen2.font:       'DejaVu Sans Mono:pixelsize=12:style=Book'
+dzen2.background: base01
+dzen2.foreground: base05

@@ -1,0 +1,36 @@
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Colors
+!-------------------------------------------------------------------------------
+!  * `URxvt.color0`  -> Gray 1
+!  * `URxvt.color1`  -> Red
+!  * `URxvt.color2`  -> Green
+!  * `URxvt.color3`  -> Yellow
+!  * `URxvt.color4`  -> Blue
+!  * `URxvt.color5`  -> Purple
+!  * `URxvt.color6`  -> Cyan
+!  * `URxvt.color7`  -> White 1
+!  * `URxvt.color8`  -> Gray 4
+!  * `URxvt.color9`  -> Orange
+!  * `URxvt.color10` -> Gray 2
+!  * `URxvt.color11` -> Gray 3
+!  * `URxvt.color12` -> Gray 5
+!  * `URxvt.color13` -> White 2
+!  * `URxvt.color14` -> Brown
+!  * `URxvt.color15` -> White 3
+!-------------------------------------------------------------------------------
+URxvt.color0:  base00
+URxvt.color1:  base08
+URxvt.color2:  base0B
+URxvt.color3:  base0A
+URxvt.color4:  base0D
+URxvt.color5:  base0E
+URxvt.color6:  base0C
+URxvt.color7:  base05
+URxvt.color8:  base03
+URxvt.color9:  base09
+URxvt.color10: base01
+URxvt.color11: base02
+URxvt.color12: base04
+URxvt.color13: base06
+URxvt.color14: base0F
+URxvt.color15: base07

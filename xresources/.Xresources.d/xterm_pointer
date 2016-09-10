@@ -1,0 +1,10 @@
+!-------------------------------------------------------------------------------
+!-- xterm Pointer
+!-------------------------------------------------------------------------------
+!  * `xterm*pointerColorBackground` -> Background color of the pointer
+!  * `xterm*pointerColor`           -> Foreground color of the pointer
+!  * `xterm*pointerShape`           -> Pointer appearance
+!-------------------------------------------------------------------------------
+xterm*pointerColor:           base05
+xterm*pointerColorBackground: base05
+xterm*pointerShape:           xterm

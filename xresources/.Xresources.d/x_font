@@ -1,0 +1,18 @@
+!-------------------------------------------------------------------------------
+!-- X FreeType
+!-------------------------------------------------------------------------------
+!  * `Xft.antialias`        -> Enable/Disable anti-aliased font
+!  * `Xft.autohint`         -> Enable/Disable automatic font hinting 
+!  * `Xft.dpi`              -> Dots Per Inch 
+!  * `Xft.hinting`          -> Enable/Disable font hinting
+!  * `Xft.hintstyle`        -> Degree of hinting to use 
+!  * `Xft.lcdfilter`        -> Perform filtering
+!  * `Xft.rgba`             -> Type of subpixel anti-aliasing
+!-------------------------------------------------------------------------------
+Xft.antialias:        true
+Xft.autohint:         true
+Xft.dpi:              96
+Xft.hinting:          true
+Xft.hintstyle:        hintslight
+Xft.lcdfilter:        lcddefault
+Xft.rgba:             rgb

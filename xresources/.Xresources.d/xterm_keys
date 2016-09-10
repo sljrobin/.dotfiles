@@ -1,0 +1,16 @@
+!-------------------------------------------------------------------------------
+!-- xterm Keyboard
+!-------------------------------------------------------------------------------
+!  * `xterm*backarrowKey`    -> Enable/Disable default behavior of Backspace
+!  * `xterm*charClass`       -> Word selection
+!  * `xterm*eightBitControl` -> Enable/Disable 8 bit characters or sequences
+!  * `xterm*eightBitInput`   -> Meta characters are like single characters
+!  * `xterm*eightBitOutput`  -> 8 bit characters should be accepted as is
+!  * `xterm*metaSendsEscape` -> Enable/Disable the usage of Meta keys
+!-------------------------------------------------------------------------------
+xterm*charClass:       33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*backarrowKey:    true
+xterm*metaSendsEscape: true
+xterm*eightBitControl: false
+xterm*eightBitInput:   true
+xterm*eightBitOutput:  true

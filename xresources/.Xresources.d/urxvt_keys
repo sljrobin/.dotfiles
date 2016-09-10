@@ -1,0 +1,83 @@
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Keyboard
+!-------------------------------------------------------------------------------
+!  * `URxvt.iso14755_52`        -> Enable/Disable ISO14755
+!  * `URxvt.iso14755`           -> Enable/Disable ISO14755
+!  * `URxvt.keysym.Page_Up`     -> <Page Up>                               [Pu]
+!  * `URxvt.keysym.Page_Down`   -> <Page Down>                             [Pd]
+!  * `URxvt.keysym.C-Down`      -> <Control> + <Down>
+!  * `URxvt.keysym.C-Left`      -> <Control> + <Left>
+!  * `URxvt.keysym.C-M-Down`    -> <Control> + <Alt> + <Down>             [CAD]
+!  * `URxvt.keysym.C-M-Up`      -> <Control> + <Alt> + <Up>               [CAU]
+!  * `URxvt.keysym.C-Right`     -> <Control> + <Right>
+!  * `URxvt.keysym.C-S-Down`    -> <Control> + <Shift> + <Down>
+!  * `URxvt.keysym.C-S-Left`    -> <Control> + <Shift> + <Left>
+!  * `URxvt.keysym.C-S-M-Down`  -> <Control> + <Shift> + <Alt> + <Down>  [CSAD]
+!  * `URxvt.keysym.C-S-M-Up`    -> <Control> + <Shift> + <Alt> + <Up>    [CSAU]
+!  * `URxvt.keysym.C-S-Right`   -> <Control> + <Shift> + <Right>
+!  * `URxvt.keysym.C-S-Up`      -> <Control> + <Shift> + <Up>
+!  * `URxvt.keysym.C-Up`        -> <Control> + <Up>
+!  * `URxvt.keysym.C-equal`     -> <Control> + <=>                         [C=]
+!  * `URxvt.keysym.S-Down`      -> <Shift> + <Down>                        [SD]
+!  * `URxvt.keysym.S-End`       -> <Shift> + <End>
+!  * `URxvt.keysym.S-Home`      -> <Shift> + <Home>
+!  * `URxvt.keysym.S-Left`      -> <Shift> + <Left>
+!  * `URxvt.keysym.S-Page_Down` -> <Shift> + <Page Down>                  [SPd]
+!  * `URxvt.keysym.S-Page_Up`   -> <Shift> + <Page Up>                    [SPu]
+!  * `URxvt.keysym.S-Right`     -> <Shift> + <Right>
+!  * `URxvt.keysym.S-Up`        -> <Shift> + <Up>                          [SU]
+!
+!   [Pu] -> Scroll up 20 lines
+!   [Pd] -> Scroll down 20 lines
+!   [SU] -> Scroll up 1 line
+!   [SD] -> Scroll down 1 line
+!  [SPu] -> Scroll up 80 lines
+!  [SPd] -> Scroll down 80 lines
+!   [C=] -> Reset font size to default size
+!  [CAU] -> Increase font size for the current terminal only
+!  [CAD] -> Decrease font size for the current terminal only 
+! [CSAU] -> Increase font size for all terminals
+! [CSAD] -> Decrease font size for all terminals
+!-------------------------------------------------------------------------------
+! ISO14755
+URxvt.iso14755:           false
+URxvt.iso14755_52:        false
+
+! <Page Up> / <Page Down>
+URxvt.keysym.Page_Up:     command:\033]720;20\007
+URxvt.keysym.Page_Down:   command:\033]721;20\007
+
+! <Shift> + <*>
+URxvt.keysym.S-Home:      \033[1;2H
+URxvt.keysym.S-End:       \033[1;2F
+URxvt.keysym.S-Up:        command:\033]720;1\007
+URxvt.keysym.S-Down:      command:\033]721;1\007
+URxvt.keysym.S-Left:      \033[1;2D
+URxvt.keysym.S-Right:     \033[1;2C
+URxvt.keysym.S-Page_Up:   command:\033]720;80\007
+URxvt.keysym.S-Page_Down: command:\033]721;80\007
+
+! <Control> + <*>
+URxvt.keysym.C-Up:        \033[1;5A
+URxvt.keysym.C-Down:      \033[1;5B
+URxvt.keysym.C-Left:      \033[1;5D
+URxvt.keysym.C-Right:     \033[1;5C
+URxvt.keysym.C-equal:     command:\
+    \033]710;xft:DejaVu Sans Mono:pixelsize=12:style=Book\007\
+    \033]711;xft:DejaVu Sans Mono:pixelsize=12:style=Bold\007\
+    \033]712;xft:DejaVu Sans Mono:pixelsize=12:style=Oblique\007\
+    \033]713;xft:DejaVu Sans Mono:pixelsize=12:style=Bold Oblique\007
+
+! <Control> + <Shift> + <*>
+URxvt.keysym.C-S-Up:      \033[1;6A
+URxvt.keysym.C-S-Down:    \033[1;6B
+URxvt.keysym.C-S-Left:    \033[1;6D
+URxvt.keysym.C-S-Right:   \033[1;6C
+
+! <Control> + <Shift> + <Alt> + <*>
+URxvt.keysym.C-S-M-Up:    perl:font-size:incglobal
+URxvt.keysym.C-S-M-Down:  perl:font-size:decglobal
+
+! <Control> + <Alt> + <*>
+URxvt.keysym.C-M-Up:      perl:font-size:increase
+URxvt.keysym.C-M-Down:    perl:font-size:decrease

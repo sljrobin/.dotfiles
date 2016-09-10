@@ -1,0 +1,36 @@
+!-------------------------------------------------------------------------------
+!-- Theme
+!-------------------------------------------------------------------------------
+!  * `base00` -> Gray 1
+!  * `base01` -> Gray 2
+!  * `base02` -> Gray 3
+!  * `base03` -> Gray 4
+!  * `base04` -> Gray 5
+!  * `base05` -> White 1
+!  * `base06` -> White 2
+!  * `base07` -> White 3
+!  * `base08` -> Red
+!  * `base09` -> Orange
+!  * `base0A` -> Yellow
+!  * `base0B` -> Green
+!  * `base0C` -> Cyan
+!  * `base0D` -> Blue
+!  * `base0E` -> Purple
+!  * `base0F` -> Brown
+!-------------------------------------------------------------------------------
+#define base00 #181818
+#define base01 #282828
+#define base02 #383838
+#define base03 #585858
+#define base04 #B8B8B8
+#define base05 #D8D8D8
+#define base06 #E8E8E8
+#define base07 #F8F8F8
+#define base08 #AB4642
+#define base09 #DC9656
+#define base0A #F7CA88
+#define base0B #A1B56C
+#define base0C #86C1B9
+#define base0D #7CAFC2
+#define base0E #BA8BAF
+#define base0F #A16946

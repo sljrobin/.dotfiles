@@ -1,0 +1,18 @@
+!-------------------------------------------------------------------------------
+!-- xterm Fonts
+!-------------------------------------------------------------------------------
+!  * `xterm*boldColors` -> Enable/Disable bold colors
+!  * `xterm*boldFont`   -> Bold font
+!  * `xterm*boldMode`   -> Enable/Disable the 'bold' attribute
+!  * `xterm*faceName`   -> Font from the FreeType library
+!  * `xterm*faceSize`   -> Font size
+!  * `xterm*underLine`  -> Enable/Disable the 'underline' attribute
+!  * `xterm*utf8`       -> Enable/Disable UTF-8
+!-------------------------------------------------------------------------------
+xterm*utf8:       1
+xterm*boldColors: true
+xterm*boldMode:   true
+xterm*underLine:  true
+xterm*faceName:   DejaVu Sans Mono:style=Book
+xterm*faceSize:   9
+xterm*boldFont:   DejaVu Sans Mono:style=Bold

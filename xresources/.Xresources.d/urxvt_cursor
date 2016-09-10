@@ -1,0 +1,12 @@
+!-------------------------------------------------------------------------------
+!-- rxvt-unicode Cursor
+!-------------------------------------------------------------------------------
+!  * `URxvt.colorBD`     -> Terminal cursor bold color
+!  * `URxvt.colorIT`     -> Terminal cursor italic color
+!  * `URxvt.cursorBlink` -> Enable/Disable terminal cursor blinking
+!  * `URxvt.cursorColor` -> Terminal cursor main color
+!-------------------------------------------------------------------------------
+URxvt.colorBD:     base08
+URxvt.colorIT:     base09
+URxvt.cursorBlink: true
+URxvt.cursorColor: base05
