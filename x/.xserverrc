@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+#        Filename: .xserverrc
+#     Description: Start the X Server
+#          Author: Simon L. J. Robin | https://sljrobin.org
+#         Created: 2016-04-10 03:51:37
+#        Modified: 2016-04-10 03:52:59
+#
+################################################################################
+exec /usr/bin/X -nolisten tcp "$@"
