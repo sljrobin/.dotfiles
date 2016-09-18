@@ -31,8 +31,8 @@ import XMonad.Hooks.DynamicLog
 --------------------------------------------------------------------------------
 myLogHook h = dynamicLogWithPP $ dzenPP
     { ppCurrent         = dzenColor "#303030" "#909090" . pad
-    , ppHidden          = dzenColor "#909090" "#123456" . pad
-    , ppHiddenNoWindows = dzenColor "#909090" "#123456" . pad
+    , ppHidden          = dzenColor "#909090" "#282828" . pad
+    , ppHiddenNoWindows = dzenColor "#909090" "#282828" . pad
     , ppLayout          = dzenColor "#ebac54" "#1B1D1E" .
         (\x -> case x of
         "ResizableTall"            -> "R"
