@@ -35,8 +35,7 @@ import Hook_Startup
 --------------------------------------------------------------------------------
 main :: IO ()
 main = do
-    myDzenLeft <- spawnPipe "dzen2 -x '0' -y '0' -w '960' -ta 'l'"
-    --myDzenBL <- spawnPipe "./home/sljrobin/.dzen2/bar1&"
+    myDzenLeft <- spawnPipe "dzen2 -x '0' -y '0' -w '960' -ta 'l' -bg '#282828'"
 
     xmonad $ withUrgencyHook NoUrgencyHook $ defaultConfig
         { -- Elements
