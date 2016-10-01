@@ -1,0 +1,61 @@
+## Configuration for newsbeuter
+## Author: Simon L. J. Robin
+#
+########################################################################################################################
+
+## Core
+browser firefox                               # Web browser to open URLs
+cache-file "~/.newsbeuter/cache.db"           # Path for the cache file
+cleanup-on-quit yes                           # Remove superfluous feeds and items
+save-path ~/.newsbeuter/                      # Path where articles are saved
+
+## Reloading
+auto-reload yes                               # Reload all the feeds at startup
+download-retries 1                            # Times to try to download a feed
+download-timeout 30                           # Time to wait in seconds before a new download
+refresh-on-startup yes                        # All feeds are realoaded during startup
+reload-only-visible-feeds no                  # Reload all feeds
+reload-threads 1                              # Number of parallel reload threads
+reload-time 15                                # Number of minutes between automatic reloads
+suppress-first-reload no                      # Enable first reload
+use-proxy no                                  # Do not use a proxy for downloading RSS feeds
+
+## Notifications
+notify-always no                              # Notifications only when new articles
+notify-beep no                                # No sounds from the beeper
+notify-screen yes                             # Send a message to the terminal
+notify-xterm yes                              # Modify the xterm window title
+
+## Interface
+confirm-exit no                               # No confirmation for exiting
+history-limit 0                               # Disable history saving
+goto-first-unread no                          # Do not select the first unread article in a feed
+goto-next-feed no                             # No searches for unread articles with keys 
+keep-articles-days 0                          # Keep all articles
+max-items 0                                   # Keep all articles in feeds
+
+## Display
+always-display-description true               # Always display descriptions 
+article-sort-order date-asc                   # Sort articles by ascending date
+display-article-progress yes                  # Display a percentage in the article view during reading
+mark-as-read-on-hover no                      # Do not mark article as read when selected
+show-keymap-hint yes                          # Show keymaps hints
+show-read-articles yes                        # Show read articles
+show-read-feeds yes                           # Show read feeds
+text-width 0                                  # HTML will be rendered using the full terminal width
+
+## Formatting
+articlelist-format "%D  %?T?|%-17T|?%t"       # Article list
+datetime-format %Y/%m/%d                      # Date time (<year>/<month>/<day>)
+feedlist-format "%S%n %11u %t"                # Feed list
+notify-format "%d N (%n A, %f F)"             # Notifications (x new (x articles, x feeds))
+
+## Colors
+color article color07 color00                 # Article
+color background color00 color00              # Background
+color info color07 color19                    # Info
+color listfocus color04 color18               # List focus
+color listfocus_unread color05 color18 bold   # List focus unread
+color listnormal color07 color00              # List normal
+color listnormal_unread color07 color00 bold  # List normal unread
+search-highlight-colors color00 color16       # Hihglighting colors when searching for text
