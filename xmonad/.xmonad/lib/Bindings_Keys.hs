@@ -90,8 +90,8 @@ myKeys =
     -- * `M-b`      -> Decreases to 5% the brightness
     -- * `M-s`      -> Changes the keyboard layout to US
     ----------------------------------------------------------------------------
-    [ ("M-<F1>"  , spawn "amixer -q set Master toggle")
-    , ("M-S-<F1>", spawn "amixer -q -D pulse set Master toggle")
+    [ ("M-<F1>"  , spawn "amixer -q -D pulse set Master toggle")
+    , ("M-S-<F1>", spawn "amixer -q set Master toggle")
     , ("M-<F2>"  , spawn "amixer -q set Master 2%-")
     , ("M-S-<F2>", spawn "amixer -q set Master 2%+")
     , ("M-<F3>"  , spawn "mpc toggle")
