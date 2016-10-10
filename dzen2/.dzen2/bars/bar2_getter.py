@@ -5,7 +5,7 @@
 #     Description: Bar 2 - Getter
 #          Author: Simon L. J. Robin | https://sljrobin.org
 #         Created: 2016-08-28 23:57:47
-#        Modified: 2016-09-30 10:06:16
+#        Modified: 2016-10-09 21:27:50
 #
 ################################################################################
 import os
