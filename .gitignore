@@ -1,3 +1,4 @@
+*.pyc
 dzen2/.dzen2_bak
 dzen2/.dzen2_github
 mpd/.mpd/db
@@ -6,6 +7,7 @@ mpd/.mpd/pid
 mpd/.mpd/state
 ncmpcpp/.ncmpcpp/error.log
 newsbeuter/.newsbeuter/cache.db
+newsbeuter/.newsbeuter/cache.db.lock
 newsbeuter/.newsbeuter/history.cmdline
 newsbeuter/.newsbeuter/history.search
 vim/.vim/bundle
