@@ -80,6 +80,7 @@ myKeys =
     -- * `M-<F2>`   -> Decreases volume
     -- * `M-<F3>`   -> Toggles MPC
     -- * `M-<F4>`   -> Switches to the next song on the playlist
+    -- * `M-C-b`    -> Sets the brightness at 1%
     -- * `M-S-<F1>` -> Mutes/Unmutes volume
     -- * `M-S-<F2>` -> Increases volume
     -- * `M-S-<F3>` -> Stops MPC
@@ -100,6 +101,7 @@ myKeys =
     , ("M-S-<F4>", spawn "mpc prev")
     , ("M-b"     , spawn "xbacklight -dec 5")
     , ("M-S-b"   , spawn "xbacklight -inc 5")
+    , ("M-C-b"   , spawn "xbacklight -set 1")
     , ("M-s"     , spawn "setxkbmap us")
     , ("M-S-s"   , spawn "setxkbmap fr")
     , ("M-S-z"   , spawn "xscreensaver-command --lock")
