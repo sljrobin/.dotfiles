@@ -4,7 +4,7 @@
 #     Description: Zsh | Aliases
 #          Author: Simon L. J. Robin | https://sljrobin.org
 #         Created: 2016-01-18 16:32:56
-#        Modified: 2016-08-04 16:28:59
+#        Modified: 2016-10-13 23:02:21
 #
 ########################################################################################################################
 # Aliases | Set aliases for Git
@@ -63,6 +63,7 @@ function __zsh_aliases_vi()
 function __zsh_aliases_x()
 {
   alias kx='pkill -15 Xorg'                                                                            # `kx`: kill the X Window Server
+  alias night='xbacklight -set 1'
   alias screens='xrandr --output eDP1 --mode 1920x1080 --output DP2 --mode 1920x1080 --right-of eDP1'  # `screens`: define a second monitor
   alias screens_xf86='xrandr --output eDP-1 --mode 1920x1080 --output DP-2 --mode 1920x1080 --right-of eDP-1'  # `screens_xf86`: define a second monitor on without `xf86-video-intel` installed
   alias sx='startx'                                                                                    # `sx`: start the X Window Server
