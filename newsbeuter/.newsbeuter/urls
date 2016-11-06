@@ -1,0 +1,111 @@
+## URLs for Newsbeuter
+## Author: Simon L. J. Robin
+#
+# Tagging feeds
+#    * Electronics         * Misc                    * Reverse Engineering
+#    * Exploit             * News                    * Tools
+#    * Forensics           * Penetration Testing     * Tutorials
+#    * Fuzzing             * Podcast                 * Vulnerability
+#    * Malware Analysis    * Programming             * Write-up
+#
+########################################################################################################################
+
+## News
+http://feeds.feedburner.com/darknethackers "News" "Tools" "Tutorials"                                       "~Darknet"
+https://www.reddit.com/r/news+netsec.rss "News"                                                             "~reddit"
+http://feeds.feedburner.com/CyberArms "Exploit" "News" "Penetration Testing"                                "~CYBER ARMS"
+http://feeds.feedburner.com/GoogleOnlineSecurityBlog "News"                                                 "~Google Online Security"
+http://www.securityinsider-solucom.fr/feeds/posts/default "News" "Tutorials"                                "~SecurityInsider"
+https://securelist.com/feed/ "Malware Analysis" "News" "Reverse Engineering"                                "~Securelist"
+https://labsblog.f-secure.com/feed/ "Malware Analysis" "News" "Reverse Engineering"                         "~F-Secure"
+http://kondah.com/feed/ "News" "Tutorials"                                                                  "~Kondah Consortium"
+http://news0ft.blogspot.com/feeds/posts/default "News"                                                      "~newsoft/fun"
+http://zer0daydan.blogspot.com/feeds/posts/default "News"                                                   "~Zer0DayDan"
+http://korben.info/rss "News" "Tutorials"                                                                   "~Korben"
+http://lehollandaisvolant.net/rss.php "News" "Tutorials"                                                     "~lehollandaisv"
+
+## Podcasts
+http://www.nolimitsecu.fr/feed/ "News" "Podcast" "Tutorials"                                                "~No Limit Secu"
+http://www.comptoirsecu.fr/feed/ "News" "Podcast"                                                           "~Le Comptoir Secu"
+http://lescastcodeurs.libsyn.com/rss "News" "Podcast" "Programming"                                         "~Les Cast Codeurs"
+
+## Exploit
+http://ifsec.blogspot.com/feeds/posts/default "Exploit" "Reverse Engineering"                               "~ifsecure"
+http://infosec42.blogspot.com/feeds/posts/default "Exploit"                                                 "~Hak42 InfoSec"
+http://security.my/rss "Exploit" "Fuzzing" "Reverse Engineering"                                            "~Security.my"
+http://googleprojectzero.blogspot.com/feeds/posts/default "Exploit" "Fuzzing" "Vulnerability"               "~Google Project Zero"
+http://lcamtuf.blogspot.com/feeds/posts/default "Fuzzing" "Penetration Testing" "Vulnerability"             "~lcamtuf"
+http://j00ru.vexillium.org/?feed=rss2 "Exploit" "Reverse Engineering" "Vulnerability"                       "~j00ru"
+https://feeds.feedburner.com/GynvaelColdwindEN?format=xml "Exploit" "Reverse Engineering" "Vulnerability"   "~gynvael"
+http://blog.cr0.org/feeds/posts/default "Exploit" "Reverse Engineering" "Vulnerability"                     "~cr0"
+https://feeds.feedburner.com/Xylibox?format=xml "Malware Analysis" "Reverse Engineering"                    "~XyliBox"
+http://blog.quarkslab.com/feeds/all.rss.xml "Exploit" "Reverse Engineering"                                 "~Quarkslab"
+http://esec-lab.sogeti.com/feeds/rss.xml "Exploit" "Reverse Engineering" "Vulnerability"                    "~Sogeti ESEC Lab"
+http://blog.cmpxchg8b.com/feeds/posts/default "Exploit" "Reverse Engineering" "Vulnerability"               "~taviso"
+https://xorl.wordpress.com/feed/ "Exploit" "Vulnerability"                                                  "~xorl"
+http://blog.invisiblethings.org/feed.xml "Exploit" "Vulnerability"                                          "~Invisible Things Lab"
+https://osandamalith.wordpress.com/feed/ "Exploit" "Programming" "Vulnerability"                            "~OsandaMalith"
+http://security-obscurity.blogspot.com/feeds/posts/default "Exploit" "Programming" "Vulnerability"          "~SecObscurity"
+http://scarybeastsecurity.blogspot.com/feeds/posts/default "Exploit" "Programming" "Vulnerability"          "~scarybeasts"
+http://newsoft-tech.blogspot.com/feeds/posts/default "Exploit" "Penetration Testing" "Vulnerability"        "~newsoft/tech"
+
+## Reverse Engineering
+https://doar-e.github.io/atom.xml "Reverse Engineering" "Write-up"                                          "~Diary of a reverse-engineer"
+http://shell-storm.org/rss.xml "Reverse Engineering"                                                        "~shell-storm"
+http://www.alex-ionescu.com/?feed=rss2 "Forensics" "Reverse Engineering"                                    "~aionescu"
+https://www.lexsi.com/securityhub/feed/atom/ "Malware Analysis" "Reverse Engineering"                       "~Lexsi"
+http://blog.airbuscybersecurity.com/feed/atom "Forensics" "Malware Analysis" "Reverse Engineering"          "~Airbus D&S CyberSecurity"
+http://malware.dontneedcoffee.com/feeds/posts/default?alt=rss "Exploit" "Malware Engineering"               "~Kafeine"
+http://contagiodump.blogspot.com/feeds/posts/default "Exploit" "Malware Analysis"                           "~contagio"
+http://0vercl0k.tuxfamily.org/bl0g/?feed=rss2 "Reverse Engineering"                                         "~0vercl0k/new"
+http://0vercl0k.blogspot.com/feeds/posts/default "Reverse Engineering"                                      "~0vercl0k/old"
+http://cybergibbons.com/feed/ "Reverse Engineering"                                                         "~reenignE"
+http://tekwizz123.blogspot.com/feeds/posts/default "Reverse Engineering"                                    "~tekwizz123"
+https://hshrzd.wordpress.com/feed/ "Reverse Engineering" "Write-up"                                         "~hasherezade"
+http://0x1338.blogspot.com/feeds/posts/default "Malware Analysis" "Reverse Engineering"                     "~0x1338"
+http://expertmiami.blogspot.com/feeds/posts/default "Reverse Engineering"                                   "~crypt0ad"
+http://blog.techorganic.com/atom.xml "Reverse Engineering" "Write-up"                                       "~superkojiman"
+http://feeds.feedburner.com/jmichelp "Electronics" "Reverse Engineering"                                    "~jmichel_p"
+http://reversewithme.blogspot.com/feeds/posts/default "Reverse Engineering"                                 "~Zarrasvand"
+http://feeds.feedburner.com/BinaryWorldForBinaryPeople "Exploit" "Reverse Engineering"                      "~m_101"
+http://www.ivanlef0u.tuxfamily.org/?feed=rss2 "Reverse Engineering"                                         "~Ivanlef0u"
+http://baboon.rce.free.fr/index.php?feed/atom "Reverse Engineering"                                         "~elvanderb"
+http://blog.security-x.fr/feed/ "Reverse Engineering" "Tutorials"                                           "~Security-X"
+
+## Penetration Testing
+https://pentestlab.wordpress.com/feed/ "Penetration Testing"                                                "~netbiosX"
+https://blackpentesters.blogspot.com/feeds/posts/default "Penetration Testing"                              "~eXpl0i13r"
+https://digi.ninja/rss.xml "Penetration Testing"                                                            "~digininja"
+https://thepacketgeek.com/feed/ "Penetration Testing"                                                       "~thepacketgeek"
+http://blog.g0tmi1k.com/atom.xml "Penetration Testing"                                                      "~g0tm1lk"
+http://blog.stalkr.net/feeds/posts/default "Penetration Testing" "Reverse Engineering" "Write-up"           "~StalkR"
+https://quack1.me/feeds/all.atom.xml "Penetration Testing" "Tutorials"                                      "~Quack1"
+http://www.gotohack.org/feeds/posts/default "Forensics" "Penetration Testing" "Reverse Engineering"         "~Goto:H[@]ck"
+
+## Write-up
+http://pwning.net/feed "Write-up"                                                                           "~Plaid Parliament of Pwning"
+http://blog.scrt.ch/feed/ "Write-up"                                                                        "~SCRT Information Security"
+http://blog.0x80.org/rss/ "Write-up"                                                                        "~0xcd80"
+http://balidani.blogspot.com/feeds/posts/default "Write-up"                                                 "~balidani"
+https://www.dailysecurity.fr/feed "Write-up"                                                                "~ Daily Security"
+http://hacktracking.blogspot.com/feeds/posts/default "Write-up"                                             "~hacktracking"
+http://infamoussyn.com/feed/ "Write-up"                                                                     "~Infamous SYN"
+http://cplusperks.com/rss/ "Write-up"                                                                       "~luckycevans"
+http://blog.zer0w1re.net/rss/ "Write-up"                                                                    "~zer0w1re"
+http://www.top-hat-sec.com/1/feed "Write-up"                                                                "~R4v3N"
+
+## Tools
+http://codearcana.com/feeds/all.atom.xml "Tools" "Tutorials"                                                "~awreece"
+https://piratercommeunnul.wordpress.com/feed/ "Tools" "Tutorials"                                           "~nul(l)"
+http://hamza-mega.blogspot.com/feeds/posts/default "Tools" "Tutorials"                                      "~Hamza_Mega"
+http://csmusings.blogspot.com/feeds/posts/default "Tools" "Tutorials"                                       "~meikk"
+http://www.openrce.org/rss/feeds/blogs "Tools" "Tutorials"                                                  "~OpenRCE"
+http://feeds.feedburner.com/ThireusBl0g "Tools" "Tutorials"                                                 "~Thireus"
+
+## Programming
+http://windowsir.blogspot.com/feeds/posts/default "Write-up"                                                "~Windows Incident Response"
+http://eli.thegreenplace.net/feeds/all.atom.xml "Programming"                                               "~elibendersky"
+http://feeds.feedburner.com/msuicheblog "Forensics" "News" "Programming"                                    "~msuiche"
+http://jvns.ca/atom.xml "News" "Programming"                                                                "~b0rk"
+https://feeds.feedburner.com/codinghorror "Programming"                                                     "~codinghorror"
+http://c-skills.blogspot.com/feeds/posts/default "Programming"                                              "~C-skills"
