@@ -5,7 +5,7 @@
 #     Description: Functions for Internet
 #          Author: Simon L. J. Robin | https://sljrobin.org
 #         Created: 2016-09-10 15:39:39
-#        Modified: 2016-10-01 22:21:56
+#        Modified: 2016-11-09 15:16:25
 #
 ################################################################################
 import os
