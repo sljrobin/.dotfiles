@@ -8,3 +8,6 @@ Personal configuration files for Unix/Linux.
     * Monitor: [Conky](https://github.com/brndnmtthws/conky)
     * GUI: [X](http://www.x.org/wiki/)/[xmonad](http://xmonad.org/)
     * Notifications: [Dzen](https://robm.github.io/dzen/)
+* __Development__
+    * Editor: [vim](http://www.vim.org/)
+    * VCS: [Git](https://git-scm.com/)
